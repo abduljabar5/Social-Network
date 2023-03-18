@@ -87,5 +87,37 @@ module.exports = {
               })
               .catch((err) => res.json(err));
           },
-        
+         // add reactions
+  addReaction(req, res) {
+    console.log(req.body);
+    thoughts.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $addToSet: { reactions: req.body } },
+      { new: true, runValidators: false }
+    )
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: "No thought with this id" });
+          return;
+        }
+        res.json(thought);
+      })
+      .catch((err) => res.json(err));
+  },
+   // remove reactions
+   removeReaction(req, res) {
+    thoughts.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $pull: { reactions: { reactionId: req.params.reactionId } } },
+      { new: true, runValidators: true }
+    )
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: "No thought with this id" });
+          return;
+        }
+        res.json(thought);
+      })
+      .catch((err) => res.json(err));
+  },
 }
