@@ -24,6 +24,10 @@ its an API for a social network web application where users can share their thou
 
 ## Credits
 google
+<br>
+https://www.mongodb.com/docs/manual/reference/operator/update/push/
+https://mongoosejs.com/docs/api/mongoosedocumentarray.html#mongoosedocumentarray_MongooseDocumentArray-pull
+https://stackoverflow.com/
 
 ## License
 
