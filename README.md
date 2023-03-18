@@ -18,7 +18,9 @@ https://drive.google.com/file/d/1HQRl8wxWIMbtfYmDpGbvFGjUIasC3Ek8/view
 
 its an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. 
 
-![Alt text](assets/img/portfolio.png)
+[Untitled_ Mar 18, 2023 10_43 AM.webm]( https://user-images.githubusercontent.com/115905200/226116646-9f3f867b-ef4f-4eab-b5e1-1816d26dbf28.webm )
+
+
 
 ## Credits
 google
